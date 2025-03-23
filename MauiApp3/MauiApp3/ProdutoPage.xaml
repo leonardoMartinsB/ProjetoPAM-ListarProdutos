@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MauiApp3.ProdutoPage"
+             BindingContext="{x:Reference Produto}"
+             Title="Produto Selecionado"
+             BackgroundColor="#F5F5F5">
+
+    <VerticalStackLayout Padding="20" Spacing="15">
+        <Border BackgroundColor="#FFFFFF"
+                Padding="15"
+                Stroke="#DDDDDD"
+                StrokeThickness="1"
+                StrokeShape="RoundRectangle 10">
+            <HorizontalStackLayout Spacing="10">
+                <Label Text="Nome"
+                       FontSize="16"
+                       TextColor="#333333"
+                       VerticalOptions="Center"
+                       HorizontalOptions="Start" />
+                <Label Text="{Binding Nome}"
+                       FontSize="20"
+                       FontAttributes="Bold"
+                       TextColor="#000"
+                       VerticalOptions="Center"
+                       HorizontalOptions="EndAndExpand" />
+            </HorizontalStackLayout>
+        </Border>
+        <Border BackgroundColor="#FFFFFF"
+                Padding="15"
+                Stroke="#DDDDDD"
+                StrokeThickness="1"
+                StrokeShape="RoundRectangle 10">
+            <HorizontalStackLayout Spacing="10">
+                <Label Text="Preço"
+                       FontSize="16"
+                       TextColor="#333333"
+                       VerticalOptions="Center"
+                       HorizontalOptions="Start" />
+                <Label Text="{Binding Preco, StringFormat='{0:C}'}"
+                       FontSize="20"
+                       FontAttributes="Bold"
+                       TextColor="#00796B"
+                       VerticalOptions="Center"
+                       HorizontalOptions="End" />
+            </HorizontalStackLayout>
+        </Border>
+        <Border BackgroundColor="#FFFFFF"
+                Padding="15"
+                Stroke="#DDDDDD"
+                StrokeThickness="1"
+                StrokeShape="RoundRectangle 10">
+            <HorizontalStackLayout Spacing="10">
+                <Label Text="Categoria"
+                       FontSize="16"
+                       TextColor="#333333"
+                       VerticalOptions="Center"
+                       HorizontalOptions="Start" />
+                <Label Text="{Binding Categoria}"
+                       FontSize="20"
+                       FontAttributes="Bold"
+                       TextColor="#6C757D"
+                       VerticalOptions="Center"
+                       HorizontalOptions="End" />
+            </HorizontalStackLayout>
+        </Border>
+        <Border BackgroundColor="#FFFFFF"
+                Padding="15"
+                Stroke="#DDDDDD"
+                StrokeThickness="1"
+                StrokeShape="RoundRectangle 10">
+            <HorizontalStackLayout Spacing="10">
+                <Label Text="Quantidade em Estoque"
+                       FontSize="16"
+                       TextColor="#333333"
+                       VerticalOptions="Center"
+                       HorizontalOptions="Start" />
+                <Label Text="{Binding QuantidadeEmEstoque}"
+                       FontSize="20"
+                       FontAttributes="Bold"
+                       TextColor="#FF5722"
+                       VerticalOptions="Center"
+                       HorizontalOptions="End" />
+            </HorizontalStackLayout>
+        </Border>
+    </VerticalStackLayout>
+</ContentPage>

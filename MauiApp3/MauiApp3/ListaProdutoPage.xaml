@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+               xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+               xmlns:local="clr-namespace:MauiApp3"
+               x:Class="MauiApp3.ListaProdutoPage"
+               Title="Produtos Disponíveis"
+               BackgroundColor="#F5F5F5">
+    <ScrollView>
+        <VerticalStackLayout Padding="10">
+            <Label Text="Lista de Produtos" 
+                     FontSize="24" 
+                     FontAttributes="Bold" 
+                     TextColor="#37474F" 
+                     HorizontalOptions="Center" 
+                     Margin="0,0,0,10" />
+
+            <ListView x:Name="lstProduto" 
+                        BackgroundColor="Transparent" 
+                        SeparatorVisibility="None"
+                        ItemsSource="{Binding Produtos}"
+                        HeightRequest="500">
+                <ListView.ItemTemplate>
+                    <DataTemplate x:DataType="local:Produto">
+                        <ViewCell Tapped="ViewCell_Tapped">
+                            <Frame CornerRadius="12" Padding="15" Margin="5" BackgroundColor="White" HasShadow="True" BorderColor="#BDBDBD">
+                                <Grid>
+                                    <Grid.RowDefinitions>
+                                        <RowDefinition Height="Auto" />
+                                        <RowDefinition Height="Auto" />
+                                        <RowDefinition Height="Auto" />
+                                    </Grid.RowDefinitions>
+
+                                    <Label Text="{Binding Nome}" 
+                                             Grid.Row="1" 
+                                             FontSize="18" 
+                                             FontAttributes="Bold" 
+                                             TextColor="#212121" />
+
+                                    <Label Text="{Binding Preco, StringFormat='Preço: {0:C}'}" 
+                                             Grid.Row="2" 
+                                             FontSize="16" 
+                                             TextColor="#00796B" 
+                                             FontAttributes="Bold" />
+                                </Grid>
+                            </Frame>
+                        </ViewCell>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+        </VerticalStackLayout>
+    </ScrollView>
+</ContentPage>

@@ -1,0 +1,38 @@
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.13.35913.81
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MauiApp3", "MauiApp3\MauiApp3\MauiApp3.csproj", "{971FFB78-EED0-4CCF-8A56-5E72CDE8678A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MauiApp3.Droid", "MauiApp3\MauiApp3.Droid\MauiApp3.Droid.csproj", "{306B4485-A62D-4457-A6A3-106C35FA7117}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MauiApp3.WinUI", "MauiApp3\MauiApp3.WinUI\MauiApp3.WinUI.csproj", "{A3F93F8D-19F8-4692-B1D6-84375B43848B}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{971FFB78-EED0-4CCF-8A56-5E72CDE8678A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{971FFB78-EED0-4CCF-8A56-5E72CDE8678A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{971FFB78-EED0-4CCF-8A56-5E72CDE8678A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{971FFB78-EED0-4CCF-8A56-5E72CDE8678A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{306B4485-A62D-4457-A6A3-106C35FA7117}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{306B4485-A62D-4457-A6A3-106C35FA7117}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{306B4485-A62D-4457-A6A3-106C35FA7117}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{306B4485-A62D-4457-A6A3-106C35FA7117}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{306B4485-A62D-4457-A6A3-106C35FA7117}.Release|Any CPU.Build.0 = Release|Any CPU
+		{306B4485-A62D-4457-A6A3-106C35FA7117}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{A3F93F8D-19F8-4692-B1D6-84375B43848B}.Debug|Any CPU.ActiveCfg = Debug|x64
+		{A3F93F8D-19F8-4692-B1D6-84375B43848B}.Debug|Any CPU.Build.0 = Debug|x64
+		{A3F93F8D-19F8-4692-B1D6-84375B43848B}.Release|Any CPU.ActiveCfg = Release|x64
+		{A3F93F8D-19F8-4692-B1D6-84375B43848B}.Release|Any CPU.Build.0 = Release|x64
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {C8E2BA6D-93AA-481E-834D-015EF78569D1}
+	EndGlobalSection
+EndGlobal
